@@ -1,7 +1,7 @@
 {
-	"name": "gp-electron-quick-start",
+	"name": "ElectroSkype",
 	"version": "1.0.0",
-	"description": "Electron starting point",
+	"description": "Electron web Skype wrapper",
 	"main": "main.js",
 	"scripts": {
 		"start": "electron main.js"
@@ -11,13 +11,13 @@
 		"url": "git+https://github.com/GeordieP/electron-quick-start.git"
 	},
 	"keywords": [
-		"Electron"
+		"Electron",
+		"Skype"
 	],
 	"author": "GitHub",
 	"license": "CC0-1.0",
-	"homepage": "https://github.com/GeordieP/electron-quick-start",
 	"dependencies": {
-		
+		"configstore": "^2.0.0"
 	},
 	"devDependencies": {
 		"electron-prebuilt": "^0.36.0",

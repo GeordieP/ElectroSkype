@@ -1,17 +1,18 @@
-#gp electron-quick-start
+#Web Skype Electron Wrapper
 
-Basic fork of electron-quick-start customized to my liking.
+The Skype desktop app is awful on most platforms, but their web client is fantastic. Let's put one inside the other.
+
+## Known Issues
+- Notifications
+-- Notification popup windows/toast notifications don't work, and may never be implemented. Sounds do still work, however.
 
 ---
-## To Use
+## To Edit
 
 To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-# Clone this repository
-git clone https://github.com/atom/electron-quick-start
-# Go into the repository
-cd electron-quick-start
+# Clone this repository, cd into it
 # Install dependencies and run the app
 npm install && npm start
 ```
