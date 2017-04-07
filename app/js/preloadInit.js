@@ -16,8 +16,21 @@
 		console.log("set data");
 	});
 
+	prepareWebView = function() {
+		var webView = document.getElementById("skype-webview");
+		webView.removeEventListener('dom-ready', prepareWebView);
+
+		webView.loadURL('https://web.skype.com', {
+			// Fake user agent to Edge to enable audio calling. Video calling is not functional.
+			userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586'
+		});
+	}
+
 	window.electronWindowSetup = function() {
 		var webView = document.getElementById("skype-webview");
+		webView.addEventListener('dom-ready', prepareWebView);
+
+
 		webView.addEventListener('did-stop-loading', function(event) {
 			webView.insertCSS(window.cssData);
 		});
