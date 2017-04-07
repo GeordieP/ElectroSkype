@@ -252,8 +252,12 @@
 .Me {
   background: #000 !important;
 }
-.Me-small:before {
-  border: none;
+
+:root .swx .Me-small:before{
+
+  /* changing this border color also works!
+  border-right: 1px solid #292d33 !important;*/
+  display: none;
 }
 
 .Me-sky {
